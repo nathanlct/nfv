@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nfv"
+version = "0.1.0"
+description = "A library for solving PDEs with neural networks, augmenting finite volume methods and classical solvers."
+readme = "README.md"
+authors = [{ name = "Nathan Lichtlé", email = "nathan.lichtle@gmail.com" }]
+license = { file = "LICENSE" }
+dependencies = [
+    "numpy>=1.24.0",
+    "torch>=2.0.0",
+    "matplotlib>=3",
+    "wandb",  # for training
+    "rich",  # for eval
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "pre-commit"]
+
+[tool.setuptools]
+packages = ["nfv"]
+
+[tool.ruff]
+line-length = 129
