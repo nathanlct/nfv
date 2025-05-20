@@ -2,6 +2,7 @@ venv/
 logs/
 .DS_Store
 *.png
+*.mp4
 models/.metadata
 __pycache__/
 *.egg-info/
