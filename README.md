@@ -12,7 +12,7 @@ This library bridges deep learning and numerical methods, making it easier to de
 ## Installation
 
 ```
-git clone https://github.com/nathanlct/nfvm
+git clone https://github.com/nathanlct/nfv
 cd nfv
 python3.10 -m venv venv
 source venv/bin/activate
